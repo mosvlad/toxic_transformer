@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классификатор Русского Текста</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Классификатор Русского Текста</h1>
+        <p>Обнаружение оскорблений, угроз и непристойностей в русском тексте</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="single">Один комментарий</button>
+                <button class="tab-btn" data-tab="batch">Пакетная обработка</button>
+            </div>
+
+            <div class="tab-content active" id="single-tab">
+                <div class="input-area">
+                    <textarea id="single-comment" placeholder="Введите русский комментарий для анализа..."></textarea>
+                    <button id="analyze-btn">Анализировать</button>
+                </div>
+                <div class="result-area" id="single-result">
+                    <div class="result-placeholder">Здесь появятся результаты</div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="batch-tab">
+                <div class="input-area">
+                    <textarea id="batch-comments" placeholder="Введите по одному русскому комментарию на строку..."></textarea>
+                    <button id="analyze-batch-btn">Анализировать пакет</button>
+                </div>
+                <div class="result-area" id="batch-results">
+                    <div class="result-placeholder">Здесь появятся результаты</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Разработано на базе Tornado и Transformers &copy; FABLAB 2025</p>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
