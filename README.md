@@ -42,7 +42,7 @@
 1. Клонируйте репозиторий:
 ```bash
 git clone https://github.com/mosvlad/toxic_transformer/
-cd классификатор-токсичных-комментариев
+cd toxic_transformer
 ```
 
 2. Создайте виртуальное окружение и активируйте его:
